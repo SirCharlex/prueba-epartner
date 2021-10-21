@@ -1,0 +1,287 @@
+.navbar{
+  display: flex;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10px; */
+  /* background: blue; */
+  justify-content: space-between;
+}
+
+.logotipo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barrabusca{
+  width: 60%;
+  height: 30px;
+  /* background: chartreuse; */
+  border: black;
+  border-style: solid;
+  margin-left: 30px;
+  border-radius: 5px;
+  border-width: .2em;
+}
+
+.barrabusca input{
+  width: 94%;
+  height: 100%;
+  border: none;
+}
+
+.barrabusca button{
+  height: 100%;
+  width: 5.4%;
+  color: white;
+  background: black;
+}
+
+.mispedidos{
+  font-size: 12px;
+  font-weight: bold;
+  color: blue;
+}
+
+.aliados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.holaaliado{
+font-size: 12px;
+}
+
+.carrito{
+  display: flex;
+  align-items: center;
+}
+
+.carrito label{
+  padding: 5px;
+  font-size: 12px;
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-content: center;
+  /* justify-content: center; */
+  align-items: center;
+  justify-items: center;
+  /* background: chartreuse; */
+  font-size: 12px;
+
+  /* margin-left: 5%; */
+
+}
+
+.menu div{
+  display: flex;
+  align-items: center;
+
+}
+
+
+.imagenPrincipal{
+  width: 100%;
+  /* background-color: coral; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.imagenPrincipal img{
+  width: 70%;
+  align-self: center;
+}
+
+
+
+.contenedor{
+  width: 80%;
+  margin: auto;
+}
+
+
+/* Contenedor titulo y controles */
+.contenedor-titulo-controles{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.contenedor-titulo-controles h3{
+  color: blue;
+  font-size: 20px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+  background: gray;
+  height: 5px;
+  width: 3px;
+  cursor:pointer;
+  border: none;
+  margin-right: 2px;
+
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+  background-color: blue;
+}
+
+/* contenedor principal y flechas */
+.productos {
+  margin-top: 10px;
+
+}
+
+.productos .contenedor-principal{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.productos .contenedor-principal .flecha-izquierda,
+.productos .contenedor-principal .flecha-derecha{
+  position: absolute;
+  border: none;
+  background: rgba(0,0,0,0.3);
+  font-size: 40px;
+  height: 43%;
+  top: calc(50%-25%);
+  line-height: 40px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all ;
+
+}
+.productos .contenedor-principal .flecha-izquierda:hover,
+.productos .contenedor-principal .flecha-derecha:hover{
+  background: rgb(1, 1, 255, 0.5)
+}
+
+.productos .contenedor-principal .flecha-izquierda{
+  left: 0;
+}
+.productos .contenedor-principal .flecha-derecha{
+right: 0;
+}
+
+
+/* Carrusel */
+.productos .contenedor-carrusel{
+  width: 100%;
+  padding: 20px 0;
+  /* overflow-x: scroll; */
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.productos .contenedor-carrusel .carrusel{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.productos .contenedor-carrusel .carrusel .card{
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: .5%;
+  transition: .3s ease all;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.productos .contenedor-carrusel .carrusel .card.hover{
+  transform: scale(1.2);
+  transform-origin: center;
+}
+.productos .contenedor-carrusel .carrusel .card .imagen{
+  width: 100%;
+  height: 80%;
+}
+
+.productos .contenedor-carrusel .carrusel .card button{
+  margin: 2%;
+  padding: 2%;
+  border: none;
+  background-color: white;
+}
+.productos .contenedor-carrusel .carrusel .card button:hover{
+  color: blue;
+  font-weight: bold;
+}
+/* .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+.tituloprods{
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+.listaProductos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background: rgb(219, 218, 218); */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.tarjeta{
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  width: 20%;
+}
+.labelref{
+  background: rgb(105, 245, 255);
+  width: 90%;
+  margin: 4px;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.labelnombre{
+  /* background: chartreuse; */
+  height: 20%;
+  padding: 5px;
+  align-self: center;
+  font-size: 14px;
+}
+
+.tarjeta button{
+  /* margin-top: 5px; */
+  width: 100%;
+  /* height: 55%; */
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background: rgb(24, 110, 248);
+  color: white;
+  font-size: 10px;
+  border-radius: 4px;
+  /* position:absolute; */
+}
